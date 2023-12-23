@@ -6,11 +6,12 @@ const app = express();
 const port = 1080;
 
 app.use(morgan('combined'));
-app.use(express.static(path.join(__dirname, "/public/")));
 
+app.set("views", "./src/views");
+app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
-    res.send("hhhhh");
+    res.render("index", {username:"Neww", names:["srgrsgsssfsv", "ergeregergerger", "frdfdfdfdfdf"]});
 })
 
 app.listen(port, () => {
