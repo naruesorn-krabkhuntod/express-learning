@@ -11,7 +11,7 @@ app.set("views", "./src/views");
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
-    res.render("index", {username:"Neww", names:["srgrsgsssfsv", "ergeregergerger", "frdfdfdfdfdf"]});
+    res.render("index", {username:"Neww"});
 })
 
 app.listen(port, () => {
